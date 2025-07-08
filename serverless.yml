@@ -11,12 +11,19 @@ provider:
 plugins:
   - serverless-esbuild
   - serverless-offline
-  
+
+functions:
+  listSchedules:
+    handler: src/agenda/controller/listSchedules.handler
+    events:
+      - http:
+          path: agendas
+          method: get
+
 custom:
   esbuild:
     bundle: true
     minify: false
     sourcemap: true
-    target: 'node20'
-    platform: 'node'
-    concurrency: 10
+    target: node20
+    platform: node
