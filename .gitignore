@@ -7,6 +7,7 @@ yarn-debug.log*
 # Build output
 dist/
 build/
+.esbuil
 
 # Serverless
 .serverless/
@@ -32,3 +33,4 @@ coverage/
 
 # VS Code
 .vscode/
+
