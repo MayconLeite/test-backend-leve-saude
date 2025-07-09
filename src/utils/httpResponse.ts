@@ -1,9 +1,6 @@
 import { APIGatewayProxyResult } from 'aws-lambda'
 
-export function success(
-  body: unknown,
-  statusCode = 200,
-): APIGatewayProxyResult {
+export function success(body: unknown, statusCode = 200): APIGatewayProxyResult {
   return {
     statusCode,
     body: JSON.stringify(body),

@@ -20,6 +20,14 @@ functions:
           path: agendas
           method: get
 
+  createAppointment:
+    handler: src/agendamento/controller/createAppointment.handler
+    events:
+      - http:
+          path: agendamento
+          method: post
+          cors: true
+
 custom:
   esbuild:
     bundle: true
