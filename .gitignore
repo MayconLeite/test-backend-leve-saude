@@ -8,6 +8,7 @@ yarn-debug.log*
 dist/
 build/
 .esbuil
+.esbuild/.build/src
 
 # Serverless
 .serverless/
